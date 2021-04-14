@@ -1,0 +1,59 @@
+.week-dish {
+    background-image: url(../../../utils/special.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+
+/* styling the part that show the meal and the price  */
+
+.week-menu-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.week-menu-item p {
+    color: #b6b5b5;
+    font-size: 12px;
+    margin: 0;
+}
+
+.week-menu-price {
+    position: relative;
+}
+
+.week-menu-price::after {
+    content: "";
+    width: 12rem;
+    position: absolute;
+    top: 50%;
+    border-bottom: 2px dotted #dcdcdc;
+    right: 4rem;
+}
+
+@media only screen and (max-width: 996px) {
+    .week-dish {
+        background-image: none;
+    }
+}
+
+@media only screen and (max-width: 766px) {
+    .week-dish-info {
+        padding: 10rem 0.5rem 0;
+    }
+}
+
+@media only screen and (max-width: 472px) {
+    .week-menu-price::after {
+        display: none;
+    }
+    .week-dish-head {
+        font-size: 30px;
+    }
+    .week-dish-info {
+        padding: 12rem 0.5rem 0;
+    }
+}

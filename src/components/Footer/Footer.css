@@ -1,0 +1,25 @@
+.footer-header {
+    color: rgb(255, 197, 21);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.footer-social {}
+
+.footer-quick a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-quick a:hover {
+    color: rgb(199, 153, 15);
+    text-decoration: none;
+}
+
+.footer-contact {
+    display: flex;
+}
+
+.footer-contact p {
+    padding-left: 1.2rem;
+}

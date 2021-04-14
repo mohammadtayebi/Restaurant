@@ -1,0 +1,20 @@
+.menu-info {
+    background-image: url(../../../utils/menu-sec.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    height: 100vh;
+}
+
+.menu-info h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 110px;
+}

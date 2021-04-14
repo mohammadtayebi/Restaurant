@@ -1,0 +1,139 @@
+.navbar {
+    height: 92px;
+    display: grid;
+    grid-template-columns: 10% 70% 20%;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 0 3rem;
+    border-bottom: 1px solid;
+    position: relative;
+}
+
+.navText {
+    color: white;
+}
+
+.Nav-itemss {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: auto;
+}
+
+.Nav-itemss li {
+    cursor: pointer;
+}
+
+.Nav-itemss li a {
+    text-decoration: none;
+    padding: 1.2rem 2rem;
+}
+
+.Nav-itemss li a:hover {
+    color: #ffc515;
+}
+
+.reservation {
+    margin-left: 1rem;
+    grid-column: 3/4;
+    padding: 0 20px;
+}
+
+.reserve {
+    color: #ffc515;
+}
+
+.bars {
+    display: none;
+}
+
+
+/* responsive for tablets  */
+
+@media only screen and (max-width: 851px) {
+    .navbar {
+        height: 92px;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 0 3rem;
+        border-bottom: 1px solid;
+    }
+    .reservation {
+        display: none;
+    }
+    .Nav-itemss {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding-left: 1px;
+    }
+    .Nav-itemss li a {
+        text-decoration: none;
+        padding: 1.2rem 1rem;
+    }
+    .nav-logos {
+        border-right: 1px solid;
+        padding: 10px 0;
+    }
+}
+
+
+/* responsive for mobile devices  */
+
+@media only screen and (max-width: 564px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        z-index: 100;
+    }
+    /* hide the part that we want to show after clicking on the bars  */
+    .Nav-itemss {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: -237px;
+        right: 0;
+        opacity: 0;
+        pointer-events: none;
+        /* background-color: white; */
+        z-index: -100000;
+        transition: all 0.6s ease;
+    }
+    .active {
+        opacity: 1;
+        position: absolute;
+        top: 76px;
+        transition: all 0.7s ease;
+        pointer-events: all;
+        background-color: white;
+    }
+    .Nav-itemss li {
+        padding: 20px 0;
+        border: 1px solid;
+        width: 100%;
+    }
+    /* styling the logos  */
+    .nav-logos {
+        position: absolute;
+        left: 20px;
+        padding: 9px 20px;
+        border: 0;
+    }
+    .bars {
+        display: block;
+        grid-column: 3;
+        padding-right: 2rem;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+}
+
+
+/* grid-column: 2/3;
+  align-self: end; */

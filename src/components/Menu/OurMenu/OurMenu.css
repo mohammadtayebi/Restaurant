@@ -1,0 +1,25 @@
+.meal {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid #ffc515;
+    padding: 10px 0;
+}
+
+.meal i {
+    color: #737373;
+    width: 60px;
+    font-size: 40px;
+    text-align: right;
+    display: block;
+    position: relative;
+    top: -7px;
+}
+
+.meal-text p {
+    font-size: 11px;
+    margin-bottom: 0;
+    font-style: italic;
+    color: #7e7e7e;
+    line-height: 2;
+}

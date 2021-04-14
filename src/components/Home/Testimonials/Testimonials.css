@@ -1,0 +1,113 @@
+.testimonials {
+    background-image: url(../../../utils/testimonials.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonials-intro-text {
+    padding: 110px 0;
+}
+
+.testimonials-text {
+    display: inline-block;
+    position: relative;
+}
+
+.testimonials-text::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #ffc515;
+    top: 32px;
+    right: 105%;
+}
+
+.testimonials-text::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #ffc515;
+    top: 32px;
+    left: 105%;
+}
+
+.testimonials-icon {
+    font-size: 4rem;
+}
+
+
+/* styling the slider part  */
+
+.tes-slider {
+    /* position: relative; */
+    display: flex;
+    overflow: hidden;
+    width: 110vh;
+    height: 450px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tes-circle {
+    position: absolute;
+    bottom: 20px;
+}
+
+.tes-slide {
+    position: absolute;
+    top: 43%;
+    left: 0;
+    width: 100%;
+    transition: all 1s ease;
+}
+
+.tes-slide p {
+    width: 80%;
+    margin: auto;
+}
+
+.tes-next {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.tes-last {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.tes-active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.tes-circle-cursor {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 571px) {
+    .testimonials-text::after {
+        width: 50%;
+    }
+    .testimonials-text::before {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .testimonials-intro-text {
+        padding: 30px 0;
+    }
+    .tes-slide {
+        position: absolute;
+        top: 32%;
+        left: 0;
+        width: 100%;
+    }
+}

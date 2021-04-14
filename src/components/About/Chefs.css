@@ -1,0 +1,11 @@
+.chef-about {
+    background-image: url(../../utils/chefs-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 3rem;
+}
+
+.chef {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}

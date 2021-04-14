@@ -1,0 +1,6 @@
+.side-menu {
+    background-image: url(../../../utils/side-menu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
